@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+    "name": "Gendentity",
+    "version": "1.0",
+    "description": "Support a diverse range of gender identities and pronouns in its language and data.",
+    "content_scripts": 
+       [
+         {
+	    "matches": ["*://*/*"],
+	    "js": ["script.js"],
+	    "run_at": "document_end"
+	 }
+       ],
+    "browser_action": {
+        "default_icon": "icon.png",
+        //"default_popup": "popup.html",
+        "default_title": "Gendentity"
+    },
+
+//     "background": {
+//         "scripts": [""]
+//         "persistent": false
+//    },
+
+    "permissions": ["activeTab", "*://*/*", "storage"]
+}
